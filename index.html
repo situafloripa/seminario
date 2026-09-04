@@ -182,6 +182,39 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 
 .nota{font-size:.95rem;color:#5C4A70;margin-top:1.5rem}
 
+/* ---------- linhas de ônibus ---------- */
+.linhas{list-style:none;padding:0;margin:0 0 1.5rem;max-width:38rem}
+.linhas li{padding:.7rem 0;border-bottom:1px solid var(--linha)}
+.linhas li:last-child{border-bottom:0}
+.linhas strong{
+  display:block;font-family:"Poppins","Segoe UI",system-ui,sans-serif;
+  font-weight:600;font-size:.98rem;color:var(--roxo);margin-bottom:.1rem;
+}
+
+/* ---------- mapa ---------- */
+.mapa{
+  position:relative;display:block;margin:1.75rem 0 .5rem;max-width:48rem;
+  border:1px solid var(--linha);border-radius:1rem;overflow:hidden;
+  text-decoration:none;line-height:0;background:#EFEAF2;
+  transition:border-color .18s ease;
+}
+.mapa:hover,.mapa:focus-visible{border-color:var(--roxo-claro)}
+@media (prefers-reduced-motion:reduce){.mapa{transition:none}}
+.mapa iframe{
+  display:block;width:100%;height:22rem;border:0;
+  pointer-events:none;
+}
+.mapa-selo{
+  position:absolute;right:.9rem;bottom:.9rem;
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:var(--roxo);color:#fff;border-radius:999px;
+  padding:.55rem 1rem;line-height:1.2;
+  font-family:"Poppins","Segoe UI",system-ui,sans-serif;font-size:.9rem;font-weight:600;
+  box-shadow:0 8px 18px -10px rgba(51,34,74,.8);
+}
+.mapa-selo svg{width:1.05rem;height:1.05rem}
+@media (max-width:960px){.mapa iframe{height:15rem}}
+
 /* ---------- cartão do Instagram ---------- */
 .perfil{
   display:inline-flex;align-items:center;gap:1rem;
@@ -293,7 +326,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 
     <div class="painel" id="painel">
     <nav class="menu" aria-label="Seções da página">
-      <a href="#sobre">Sobre</a>
+      <a href="#sobre">Sobre o evento</a>
       <a href="#inscricoes">Inscrições</a>
       <a href="#programacao">Programação</a>
       <a href="#local">Local</a>
@@ -419,16 +452,35 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
         <p><strong>Escola de Saúde Pública — Multi Hospital de Florianópolis</strong><br>
         Av. Dep. Diomício Freitas, 3393 — Carianos, Florianópolis (SC), CEP 88047-900</p>
 
+        <a class="mapa" href="https://www.google.com/maps/search/?api=1&amp;query=-27.6648716%2C-48.5447883" aria-label="Abrir a localização do Multi Hospital no Google Maps">
+          <iframe src="https://maps.google.com/maps?q=-27.6648716,-48.5447883&amp;hl=pt-BR&amp;z=16&amp;output=embed" title="Mapa do Multi Hospital, Av. Dep. Diomício Freitas, 3393, Carianos" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+          <span class="mapa-selo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+              <circle cx="12" cy="10" r="2.8"/>
+            </svg>
+            Abrir no Google Maps
+          </span>
+        </a>
+
         <p>O Multi Hospital foi construído no espaço do antigo aeroporto da cidade, no bairro Carianos, região sul da Ilha. O complexo abriga, além do hospital-dia, a Escola de Saúde Pública, onde o evento será realizado.</p>
 
         <h3>Como chegar de carro</h3>
-        <p>O Multi Hospital fica próximo ao Aeroporto Internacional Hercílio Luz, com acesso pela Av. Dep. Diomício Freitas — uma boa referência tanto para quem vem de fora de Florianópolis, pela rodovia ou pelo aeroporto, quanto para quem sai do Centro, a cerca de 10 km.</p>
+        <p>O Multi Hospital fica localizado no antigo aeroporto de Florianópolis, próximo ao Aeroporto Internacional Hercílio Luz, com acesso pela Av. Dep. Diomício Freitas — uma boa referência tanto para quem vem de fora de Florianópolis, pela rodovia ou pelo aeroporto, quanto para quem sai do Centro, a cerca de 10 km.</p>
 
         <h3>Estacionamento</h3>
         <p>O local dispõe de vagas gratuitas, compartilhadas com a população atendida no complexo, e de um estacionamento pago em caso de lotação das vagas públicas.</p>
 
         <h3>Transporte público</h3>
-        <p><span class="pendente"><!-- PREENCHER: linhas de ônibus que atendem Carianos / Multi Hospital -->Inserir as linhas de ônibus que atendem a região de Carianos e o Multi Hospital.</span></p>
+        <p>O Multi Hospital de Florianópolis é atendido por linhas de ônibus que fazem ligação direta com diferentes terminais:</p>
+
+        <ul class="linhas">
+          <li><strong>186 — Multi-hospital via Túnel</strong>Sai do TICEN, plataforma B, box 7.</li>
+          <li><strong>468 — TIRIO / Multihospital</strong>Ligação direta a partir do TIRIO.</li>
+          <li><strong>V468 — TIRIO / Multihospital via Aeroporto</strong>Ligação entre o TIRIO e o Multi Hospital, passando pela região do aeroporto.</li>
+        </ul>
+
+        <p>Outras linhas passam nas proximidades: 461, 467 e 4612/4124.</p>
       </section>
 
       <section id="contato">
