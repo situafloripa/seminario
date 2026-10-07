@@ -172,7 +172,7 @@ main section > p.destaque{text-align:left;max-width:36rem;hyphens:manual}
   font-family:"Poppins","Segoe UI",system-ui,sans-serif;
   font-size:.875rem;color:var(--roxo-claro);margin:0 0 .75rem;
 }
-table{border-collapse:collapse;width:100%;max-width:46rem;font-size:1rem}
+table{border-collapse:collapse;width:100%;max-width:50rem;font-size:1rem}
 thead th{
   text-align:left;font-family:"Poppins","Segoe UI",system-ui,sans-serif;
   font-size:.78rem;font-weight:600;letter-spacing:.02em;color:var(--roxo-claro);
@@ -188,9 +188,11 @@ tbody th{
 }
 tbody td{padding:.7rem 1rem .7rem 0;border-bottom:1px solid var(--linha);vertical-align:baseline}
 tbody td.quem{
-  padding-right:0;width:7rem;white-space:nowrap;
+  padding-right:0;width:11rem;
   font-size:.9rem;color:#5C4A70;
 }
+ul.sub{list-style:none;margin:.35rem 0 0;padding:0;font-size:.96rem;color:#5C4A70}
+ul.sub li{padding:.1rem 0}
 tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
 
 .nota{font-size:.95rem;color:#5C4A70;margin-top:1.5rem}
@@ -456,80 +458,85 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
         <h2>Programação</h2>
 
         <div class="dia">
-          <h3>Dia 1 — 10 de dezembro, quinta-feira</h3>
-          <p class="horario">Formação, abertura e painéis · das 08h às 20h</p>
+          <h3>Dia 1 — quinta-feira, 10 de dezembro</h3>
+          <p class="horario">Das 08h às 20h</p>
           <table>
             <caption>Programação do dia 10 de dezembro</caption>
             <thead>
               <tr><th scope="col">Horário</th><th scope="col">Atividade</th><th scope="col">Palestrante</th></tr>
             </thead>
             <tbody>
-              <tr><th scope="row">08:00–08:30</th><td>Credenciamento e recepção</td><td class="quem vazio">—</td></tr>
-              <tr><th scope="row">08:30–09:30</th><td>Cerimônia de abertura. Mesa magna: “Saúde LGBTQIAPN+ e determinantes sociais: entre desigualdades, resistências e produção do cuidado”</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">09:30–10:00</th><td>Coffee break</td><td class="quem vazio">—</td></tr>
-              <tr><th scope="row">10:00–11:00</th><td>Conferência de abertura: “O SUS como espaço de resistência, cidadania e produção da vida”</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">11:00–12:00</th><td>Painel: determinantes sociais da saúde e produção das iniquidades em saúde LGBTQIAPN+. Doenças determinadas socialmente (HIV/aids, hepatites, tuberculose, entre outras)</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">12:00–14:00</th><td>Almoço (livre)</td><td class="quem vazio">—</td></tr>
-              <tr><th scope="row">14:00–15:30</th><td>Painel 2: “Saberes, experiências e práticas de cuidado no SUS”</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">15:30–16:00</th><td>Coffee break</td><td class="quem vazio">—</td></tr>
-              <tr><th scope="row">16:00–17:00</th><td>Painel 3: trabalho, acesso e cidadania da população LGBTQIAPN+</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">17:00–18:00</th><td>Síntese do dia</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">18:00–20:00</th><td>Programação cultural — noite 1</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">08h00–08h30</th><td>Credenciamento e recepção</td><td class="quem vazio">—</td></tr>
+              <tr><th scope="row">08h30–09h30</th><td>Cerimônia de abertura — mesa magna: “Saúde LGBTQIAPN+ e determinantes sociais: entre desigualdades, resistências e produção do cuidado”</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">09h30–10h00</th><td>Coffee break</td><td class="quem vazio">—</td></tr>
+              <tr><th scope="row">10h00–11h00</th><td>Conferência de abertura: “O SUS como espaço de resistência, cidadania e produção da vida”</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">11h00–12h00</th><td>Painel: determinantes sociais da saúde e produção das iniquidades em saúde LGBTQIAPN+</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">12h00–14h00</th><td>Almoço (livre)</td><td class="quem vazio">—</td></tr>
+              <tr><th scope="row">14h00–14h30</th><td>Lançamento <i>Redesignadas</i></td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">14h30–16h00</th><td>Painel 1: resultados de pesquisa em saúde LGBTQIAPN+</td><td class="quem">SITUA Saúde LGBTQIAPN+ Floripa e convidados</td></tr>
+              <tr><th scope="row">16h00–16h30</th><td>Coffee break</td><td class="quem vazio">—</td></tr>
+              <tr><th scope="row">16h30–18h00</th><td>Painel 2: resultados de pesquisa em saúde LGBTQIAPN+</td><td class="quem">SITUA Saúde LGBTQIAPN+ Floripa e convidados</td></tr>
+              <tr><th scope="row">18h00–20h00</th><td>Programação cultural</td><td class="quem">A confirmar</td></tr>
             </tbody>
           </table>
         </div>
 
         <div class="dia">
-          <h3>Dia 2 — 11 de dezembro, sexta-feira</h3>
-          <p class="horario">Painéis, grupos temáticos e plenária · das 08h30 às 17h30</p>
+          <h3>Dia 2 — sexta-feira, 11 de dezembro</h3>
+          <p class="horario">Das 08h30 às 17h30</p>
           <table>
             <caption>Programação do dia 11 de dezembro</caption>
             <thead>
               <tr><th scope="col">Horário</th><th scope="col">Atividade</th><th scope="col">Palestrante</th></tr>
             </thead>
             <tbody>
-              <tr><th scope="row">08:30–09:30</th><td>Painel 4 — 1º momento: resultados de pesquisa em saúde LGBTQIAPN+</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">09:30–10:30</th><td>Coffee break</td><td class="quem vazio">—</td></tr>
-              <tr><th scope="row">10:30–12:00</th><td>Painel 4 — 2º momento: resultados de pesquisa em saúde LGBTQIAPN+</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">12:00–14:00</th><td>Almoço (livre)</td><td class="quem vazio">—</td></tr>
-              <tr><th scope="row">14:00–15:30</th><td>Grupos de trabalho: GT 1, GT 2 e GT 3</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">15:45–16:30</th><td>Socialização dos GTs</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">16:30–17:30</th><td>Plenária final: construção da Carta de Florianópolis pela Saúde LGBTQIAPN+</td><td class="quem">A confirmar</td></tr>
-              <tr><th scope="row">17:30</th><td>Encerramento: leitura da carta final, pactuações interinstitucionais e recomendações para a gestão, os serviços e a formação em saúde</td><td class="quem">A confirmar</td></tr>
+              <tr>
+                <th scope="row">08h30–10h00</th>
+                <td>Atividades simultâneas
+                  <ul class="sub">
+                    <li>Painel 3: saberes, experiências e práticas de cuidado no SUS</li>
+                    <li>Painel 4: necessidades de cuidado LGBTQIAPN+ específicas?</li>
+                  </ul>
+                </td>
+                <td class="quem">A confirmar</td>
+              </tr>
+              <tr><th scope="row">10h00–10h30</th><td>Coffee break</td><td class="quem vazio">—</td></tr>
+              <tr><th scope="row">10h30–12h00</th><td>Painel: movimento social, saúde e cidadania</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">12h00–14h00</th><td>Almoço (livre)</td><td class="quem vazio">—</td></tr>
+              <tr>
+                <th scope="row">14h00–15h30</th>
+                <td>Grupos de trabalho simultâneos
+                  <ul class="sub">
+                    <li>GT 1: determinantes sociais, interseccionalidades e direitos humanos</li>
+                    <li>GT 2: produção do cuidado e acesso ao SUS</li>
+                    <li>GT 3: formação, pesquisa e educação permanente em saúde LGBTQIAPN+</li>
+                    <li>GT 4: saúde mental de pessoas LGBTQIAPN+ em tempos de neoliberalismo</li>
+                    <li>GT 5: envelhecimento da população LGBTQIAPN+</li>
+                  </ul>
+                </td>
+                <td class="quem">A confirmar</td>
+              </tr>
+              <tr><th scope="row">15h45–16h30</th><td>Socialização dos GTs</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">16h30–17h30</th><td>Plenária final</td><td class="quem">A confirmar</td></tr>
+              <tr><th scope="row">17h30</th><td>Encerramento</td><td class="quem">A confirmar</td></tr>
             </tbody>
           </table>
         </div>
 
-        <h3>Grupos de trabalho</h3>
+        <h3>Ao longo do evento</h3>
         <ul class="blocos">
           <li>
-            <h4>GT 1 — Determinantes sociais, interseccionalidades e direitos humanos</h4>
-            <p class="rotulo">Mediação a confirmar</p>
-          </li>
-          <li>
-            <h4>GT 2 — Produção do cuidado e acesso ao SUS</h4>
-            <p class="rotulo">Mediação a confirmar</p>
-          </li>
-          <li>
-            <h4>GT 3 — Formação, pesquisa e educação permanente em saúde LGBTQIAPN+</h4>
-            <p class="rotulo">Mediação a confirmar</p>
-          </li>
-        </ul>
-
-        <h3>Formação para profissionais da SMS</h3>
-        <p>Formação específica para profissionais de medicina de família e comunidade e enfermagem.</p>
-
-        <h3>Atividades permanentes</h3>
-        <ul class="blocos">
-          <li>
-            <h4>Feira de Saberes e Experiências</h4>
-            <p>Movimentos sociais, coletivos LGBTQIAPN+, projetos de extensão e organizações comunitárias.</p>
+            <h4>Tenda do Cuidado</h4>
+            <p>Práticas integrativas e complementares em saúde, com o CPIC da Secretaria Municipal de Saúde de Florianópolis.</p>
           </li>
           <li>
             <h4>Mostra Cultural</h4>
             <p>Exposição fotográfica, artes visuais e produções culturais LGBTQIAPN+.</p>
           </li>
         </ul>
+
+        <h3>Formação para profissionais da SMS</h3>
+        <p>Formação específica para profissionais de medicina de família e comunidade e enfermagem da Atenção Primária. É uma atividade interna, voltada aos núcleos de enfermagem e medicina da APS.</p>
 
         <p class="nota">A programação ainda está em construção. Os blocos acima são os previstos; palestrantes, mediações e horários podem ser ajustados.</p>
       </section>
